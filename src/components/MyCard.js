@@ -19,7 +19,7 @@ class MyCard extends Component {
                 </Row>
                 <Row className='myRow'>
                     <CardGroup className='myCompetencies'>
-                        {myCompetencies.map(nameCompetencies =>
+                        {myCompetencies?.map(nameCompetencies =>
                             <Col>
                                 <CardMyCompetencies myCompetencies={nameCompetencies}/>
                             </Col> 
@@ -32,13 +32,13 @@ class MyCard extends Component {
                 </Row>
                 <Row >
                     <CardGroup className='myColTechnologi'>
-                        {myColTechnologi.map(nameCompetencies =>
+                        {myColTechnologi?.map(nameCompetencies =>
                             <Col>
                                 <CardMyCompetencies myCompetencies={nameCompetencies}/>
                             </Col> 
                         )
                         }
-                    </CardGroup>`
+                    </CardGroup>
                 </Row>
             </Card>
         );

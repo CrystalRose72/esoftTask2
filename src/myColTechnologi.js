@@ -1,4 +1,4 @@
-const myColTechnologi = [
+export const myColTechnologi = [
     'Bitrix Fremework',
     'Jango',
     'React Native',

@@ -1,4 +1,4 @@
-const myCompetencies = [
+export const myCompetencies = [
     'Kotlin',
     'Python',
     'C#',
