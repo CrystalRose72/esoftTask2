@@ -5,7 +5,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import CardMyCompetencies from './CardMyCompetencies';
 import me from '../me.png';
-import TechnologicalCompetencies from './TechnologicalCompetencies';
+import {myCompetencies} from '../myCompetencies';
+import {myColTechnologi} from '../myColTechnologi';
 
 class MyCard extends Component {
     render() {
@@ -18,16 +19,11 @@ class MyCard extends Component {
                 </Row>
                 <Row className='myRow'>
                     <CardGroup className='myCompetencies'>
-                        {[
-                        'Kotlin',
-                        'Python',
-                        'C#',
-                        'SQL'
-                        ].map((nameCompetencies) =>(
+                        {myCompetencies.map(nameCompetencies =>
                             <Col>
                                 <CardMyCompetencies myCompetencies={nameCompetencies}/>
                             </Col> 
-                        ))
+                        )
                         }
                     </CardGroup>
                 </Row>
@@ -36,22 +32,11 @@ class MyCard extends Component {
                 </Row>
                 <Row >
                     <CardGroup className='myColTechnologi'>
-                        {[
-                        'Bitrix Fremework',
-                        'Jango',
-                        'React Native',
-                        '1C',
-                        'Laravel',
-                        'Vue.js',
-                        'Работа с внешним API',
-                        'Swift',
-                        'Firebase',
-                        'PWA'
-                        ].map((nameCompetencies) =>(
+                        {myColTechnologi.map(nameCompetencies =>
                             <Col>
-                                <TechnologicalCompetencies myTechnologicalCompetencies={nameCompetencies}/>
+                                <CardMyCompetencies myCompetencies={nameCompetencies}/>
                             </Col> 
-                        ))
+                        )
                         }
                     </CardGroup>`
                 </Row>
